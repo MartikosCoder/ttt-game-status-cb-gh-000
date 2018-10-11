@@ -41,6 +41,8 @@ def draw?(board)
   if over?(board)
     return true
   end
+
+  return false
 end
 
 def winner(board)
