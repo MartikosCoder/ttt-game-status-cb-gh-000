@@ -39,8 +39,14 @@ end
 
 def draw?(board)
   if WIN_COMBINATIONS.none? { |e| (board[win_combination[0]] == board[win_combination[1]] && board[win_combination[0]] == board[win_combination[2]]) && position_taken?(board, win_combination[0]) }
-    return 
-  return full?(board)
+    if full?(board)
+      return true
+    else
+      return false
+    end
+  else
+    return false
+  end
 end
 
 def winner(board)
