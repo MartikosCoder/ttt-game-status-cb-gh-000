@@ -34,7 +34,7 @@ def won?(board)
 end
 
 def draw?(board)
-  return !won?(board).kind_of?(Array)
+  if !(won?(board).kind_of?(Array)) && full?(board)
 end
 
 
