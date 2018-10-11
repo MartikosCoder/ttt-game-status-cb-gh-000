@@ -38,7 +38,7 @@ def over?(board)
 end
 
 def draw?(board)
-  if WIN_COMBINATIONS.none? { |e| (board[win_combination[0]] == board[win_combination[1]] && board[win_combination[0]] == board[win_combination[2]]) && position_taken?(board, win_combination[0]) }
+  if WIN_COMBINATIONS.none? { |win_combination| (board[win_combination[0]] == board[win_combination[1]] && board[win_combination[0]] == board[win_combination[2]]) && position_taken?(board, win_combination[0]) }
     if full?(board)
       return true
     else
