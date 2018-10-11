@@ -26,7 +26,8 @@ def won?(board)
 
   WIN_COMBINATIONS.each do | win_combination |
     if board[win_combination[0]] == board[win_combination[1]]
-      && board[win_combination[0]] == board[win_combination[2]] && (board[win_combination[0]] == "X" || board[win_combination[0]] == "O")
+      && board[win_combination[0]] == board[win_combination[2]]
+      && position_taken?(board, win_combination[0])
       return win_combination
     end
   end
