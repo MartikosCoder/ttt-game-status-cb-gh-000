@@ -34,7 +34,7 @@ def won?(board)
 end
 
 def over?(board)
-  return full?(board) || won?(board)
+  return  won?(board)
 end
 
 def draw?(board)
