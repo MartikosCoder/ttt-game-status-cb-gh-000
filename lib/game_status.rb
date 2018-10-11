@@ -38,8 +38,7 @@ def draw?(board)
     return false
   else
     if (!won?(board)) && full?(board)
-      puts "#{won?(board)}, #{full?(board)}"
-      return true
+      return "#{won?(board)}, #{full?(board)}"
     else
       return false
     end
