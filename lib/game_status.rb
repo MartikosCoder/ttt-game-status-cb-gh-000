@@ -34,11 +34,11 @@ def won?(board)
 end
 
 def over?(board)
-  return  won?(board)
+  return full?(board) || won?(board)
 end
 
 def draw?(board)
-  return "#{won?(board)}"
+  return won?(board)
 end
 
 def winner(board)
