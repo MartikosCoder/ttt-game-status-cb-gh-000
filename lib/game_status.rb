@@ -26,7 +26,7 @@ def won?(board)
 
   WIN_COMBINATIONS.each do | win_combination |
     if (win_combination.all? { |e| board[e] == "X" }) || (win_combination.all? { |e| board[e] == "O" })
-      return win_combination
+      return true
     end
   end
 
