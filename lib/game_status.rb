@@ -38,7 +38,6 @@ def draw?(board)
     return false
   end
     return true
-  end
 end
 
 
