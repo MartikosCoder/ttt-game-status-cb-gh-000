@@ -38,11 +38,7 @@ def over?(board)
 end
 
 def draw?(board)
-  if over?(board) && !won?(board)
-    return true
-  end
-
-  return false
+  return "#{won?(board)}"
 end
 
 def winner(board)
